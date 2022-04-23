@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form action="#" method="POST">
+            {% csrf_token %}
+
+            Roll No. : <input type="text" name="rollno"  > <br>
+            Name :     <input type="text" name="name"   > <br>
+
+            <input type="radio" name="stream" value="Medical" checked> Medical
+            <input type="radio" name="stream" value="Non-Medical"> Non-Medical
+            <input type="radio" name="stream" value="Commerce"> Commerce
+            <input type="radio" name="stream" value="Humanities"> Humanities<br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
